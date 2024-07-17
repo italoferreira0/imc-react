@@ -16,20 +16,6 @@
     padding-left: 10px;    
   }
   
-h1{
-  color: red;
-}
-
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    color: antiquewhite;
-}
-
-h2{
-  color: antiquewhite;
-  font-family: 'Times New Roman', Times, serif;
-
-}
 .title{
     padding-top: 8px;
     text-align: center;
@@ -85,7 +71,9 @@ h2{
     text-align: center;
     /* color: white; */
     /* border: solid; */
-    background-color: #5b788b;
+    /* background-color: #5b788b; */
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 .DivPesoAltura{
@@ -93,4 +81,7 @@ h2{
     text-align: center;
    
 }
+
+
+
 
