@@ -1,0 +1,100 @@
+.DivMaster {
+    border-radius: 20px;
+    width: 70%; 
+    max-width: 800px; 
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; 
+    box-sizing: border-box; 
+    background-color: #1F618D; 
+    text-align: center;
+  }
+
+  
+  @media (max-width: 600px) {
+    .DivMaster {
+      padding: 10px;
+    }
+  }
+  
+  
+  @media (max-width: 900px) {
+    .DivMaster {
+      max-width: 800px; 
+    }
+  }
+  
+  
+    .DivMaster {
+      max-width: 1000px; 
+    }
+  
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(14, 13, 13);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.title{
+    padding-top: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    text-align: center;
+    border-radius: 6px;
+    height: 40px;
+}
+
+.Input{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 15rem;
+    height: 2.5rem;
+
+}
+
+.Button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgb(125, 125, 202);
+    margin-top: 60px;
+    border-radius: 20px;
+    width: 110px;
+    height: 40px;
+    color: antiquewhite;
+    
+}
+
+  
+#calcular{
+    background-color: rgb(187, 138, 46);
+}
+
+#limpar{
+    background-color: rgb(106, 106, 201);
+}
+
+#resultado{
+    background-color: rgb(187, 138, 46); 
+}
+
+.DivTabela{
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.DivPesoAltura{
+    /* border: black solid; */
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
