@@ -49,7 +49,6 @@ export default function DivMaster() {
     return(
         
         <div className='DivMaster'>
-            <h1>teste</h1>
             <h2 className='title'>Calcular IMC</h2>
             <div class="row ">  
                 
