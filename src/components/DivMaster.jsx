@@ -9,6 +9,14 @@ export default function DivMaster() {
 
     //onChange={event => {funcao(event.target.value);}}
 
+    function setCor() {
+        document.getElementById('normal').style.color = '#111111';
+        document.getElementById('sobrepeso').style.color = '#111111';
+        document.getElementById('obesidade').style.color = '#111111';
+        document.getElementById('grave').style.color = '#111111';
+        document.getElementById('magreza').style.color = '#111111';
+    }
+
     function calcularImc(){
         const pesoFloat = parseFloat(peso)
         const alturaFloat = parseFloat(altura)
@@ -27,22 +35,24 @@ export default function DivMaster() {
         } else if (imcValor >= 40) {
             document.getElementById('grave').style.color = '#faebd7';
         }
+
+
     }
     
     function limpar() {
         setPeso('')
         setAltura('')
         setImc('')
-        document.getElementById('normal').style.color = '#808080'
-        document.getElementById('sobrepeso').style.color = '#808080'
-        document.getElementById('obesidade').style.color = '#808080'
-        document.getElementById('grave').style.color = '#808080'
-        document.getElementById('magreza').style.color = '#808080'
+        document.getElementById('normal').style.color = '#111111'
+        document.getElementById('sobrepeso').style.color = '#111111'
+        document.getElementById('obesidade').style.color = '#111111'
+        document.getElementById('grave').style.color = '#111111'
+        document.getElementById('magreza').style.color = '#111111'
     }
 
     return(
         
-    <div className='DivMaster'>
+    <div className='DivMaster' onLoad={setCor}>
         <div className="row">
             <div className="col-md-6">
                 <h2 className='title'>Calcular IMC</h2>

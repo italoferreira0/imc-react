@@ -1,5 +1,4 @@
 .DivMaster {
-    
     padding-top: 20px;
     border-radius: 20px;
     width: 70%; 
@@ -9,10 +8,8 @@
     margin-right: auto; 
     box-sizing: border-box; 
     background-color: rgba(0, 0, 0, 0.3);
-    /* background-color: #1F618D;  */
     text-align: center;
     max-width: 500px;
-    /* padding-right: 50px; */
     padding-left: 10px;    
   }
   
@@ -52,27 +49,37 @@
 
   
 #calcular{
-    background-color: rgb(187, 138, 46);
+    border-radius: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(221, 219, 219);
+    border: solid 2px;
+    margin-right: 6px;
+
 }
 
 #limpar{
-    background-color: rgb(106, 106, 201);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2;
+    color: rgb(221, 219, 219);
+    border: solid 2px;
+    border-color: bisque;
+
+
 }
 
 #resultado{
-    background-color: rgb(187, 138, 46); 
+    
+    color: rgb(221, 219, 219);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .DivTabela{
-    /* margin-right: 50px; */
-    /* padding-right: 10px; */
     padding-left: 10px;
     border-radius: 10px;
     text-align: center;
-    /* color: white; */
-    /* border: solid; */
-    /* background-color: #5b788b; */
     background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Times New Roman', Times, serif;
+
 
 }
 

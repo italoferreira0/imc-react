@@ -1,6 +1,7 @@
-.navbar-custom {
-    background-color: red;
-    padding-bottom: 2rem;
+.Navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+
 }
 
 #titulo{
@@ -9,5 +10,8 @@
     margin-top: auto;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
+    /* font-size: 20px; */
+    color: antiquewhite;
+
 }
 
