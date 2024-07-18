@@ -10,14 +10,6 @@ export default function DivMaster() {
 
     //onChange={event => {funcao(event.target.value);}}
 
-    function setCor() {
-        document.getElementById('normal').style.color = '#111111';
-        document.getElementById('sobrepeso').style.color = '#111111';
-        document.getElementById('obesidade').style.color = '#111111';
-        document.getElementById('grave').style.color = '#111111';
-        document.getElementById('magreza').style.color = '#111111';
-    }
-
     function calcularImc(){
         const pesoFloat = parseFloat(peso)
         const alturaFloat = parseFloat(altura)
@@ -26,25 +18,16 @@ export default function DivMaster() {
         setImc(imcValor.toFixed(2))
 
         if (imcValor < 18.5 && imcValor != 0) {
-            // document.getElementById('magreza').style.color = '#faebd7';
             setResultadoTexto('Magreza');
-            
         } else if (imcValor >= 18.5 && imcValor <= 24.9) {
             setResultadoTexto('Normal');
-            // document.getElementById('normal').style.color = '#faebd7';
-
         } else if (imcValor >= 25.0 && imcValor <= 29.9) {
             setResultadoTexto('Sobrepeso');
-            // document.getElementById('sobrepeso').style.color = '#faebd7';
-
         } else if (imcValor >= 30.0 && imcValor <= 39.9) {
             setResultadoTexto('Obesidade');
-            // document.getElementById('obesidade').style.color = '#faebd7';
         } else if (imcValor >= 40) {
             setResultadoTexto('Obesidade Grave');
-            // document.getElementById('grave').style.color = '#faebd7';
         }
-
 
     }
     
@@ -58,7 +41,7 @@ export default function DivMaster() {
 
     return(
         
-    <div className='DivMaster' onLoad={setCor}>
+    <div className='DivMaster'>
         <div className="row">
             <div className="col-md-6">
                 <h2 className='title'>Calcular IMC</h2>
@@ -107,7 +90,6 @@ export default function DivMaster() {
                     </table>
                     
                 </div>
-                {/* <span type='text' className='Input' placeholder='Resultado' id='text' readOnly value={resultadoTexto}/> */}
                 <input type='text' className='resultadoTexto' placeholder='' id='text' readOnly value={resultadoTexto}/>
             </div>
             
