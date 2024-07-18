@@ -6,6 +6,7 @@ export default function DivMaster() {
     const [peso, setPeso] = useState('')
     const [altura, setAltura] = useState('')
     const [imc, setImc] = useState('')
+    const [resultadoTexto, setResultadoTexto] = useState('')
 
     //onChange={event => {funcao(event.target.value);}}
 
@@ -25,29 +26,34 @@ export default function DivMaster() {
         setImc(imcValor.toFixed(2))
 
         if (imcValor < 18.5 && imcValor != 0) {
-            document.getElementById('magreza').style.color = '#faebd7';
+            // document.getElementById('magreza').style.color = '#faebd7';
+            setResultadoTexto('Magreza');
+            
         } else if (imcValor >= 18.5 && imcValor <= 24.9) {
-            document.getElementById('normal').style.color = '#faebd7';
+            setResultadoTexto('Normal');
+            // document.getElementById('normal').style.color = '#faebd7';
+
         } else if (imcValor >= 25.0 && imcValor <= 29.9) {
-            document.getElementById('sobrepeso').style.color = '#faebd7';
+            setResultadoTexto('Sobrepeso');
+            // document.getElementById('sobrepeso').style.color = '#faebd7';
+
         } else if (imcValor >= 30.0 && imcValor <= 39.9) {
-            document.getElementById('obesidade').style.color = '#faebd7';
+            setResultadoTexto('Obesidade');
+            // document.getElementById('obesidade').style.color = '#faebd7';
         } else if (imcValor >= 40) {
-            document.getElementById('grave').style.color = '#faebd7';
+            setResultadoTexto('Obesidade Grave');
+            // document.getElementById('grave').style.color = '#faebd7';
         }
 
 
     }
     
     function limpar() {
+        setResultadoTexto('')
         setPeso('')
         setAltura('')
         setImc('')
-        document.getElementById('normal').style.color = '#111111'
-        document.getElementById('sobrepeso').style.color = '#111111'
-        document.getElementById('obesidade').style.color = '#111111'
-        document.getElementById('grave').style.color = '#111111'
-        document.getElementById('magreza').style.color = '#111111'
+        
     }
 
     return(
@@ -99,8 +105,12 @@ export default function DivMaster() {
                             <td><strong>Obesidade Grave</strong></td>
                         </tr>
                     </table>
+                    
                 </div>
+                {/* <span type='text' className='Input' placeholder='Resultado' id='text' readOnly value={resultadoTexto}/> */}
+                <input type='text' className='resultadoTexto' placeholder='' id='text' readOnly value={resultadoTexto}/>
             </div>
+            
         </div>
 </div>
         
